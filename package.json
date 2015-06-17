@@ -1,0 +1,17 @@
+{
+  "name": "ecma6",
+  "version": "1.0.0",
+  "description": "ecma6 & 7 demo/testcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.30",
+    "koa": "^0.21.0",
+    "node-dev": "^2.6.2",
+    "request": "^2.58.0"
+  }
+}
