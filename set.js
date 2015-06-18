@@ -2,6 +2,8 @@
 
 'use strict';
 
+console.log('Set.prototype: ', Object.getOwnPropertyNames(Set.prototype) );
+
 var engines = new Set(); // create new Set
  
 engines.add("Gecko"); // add to Set

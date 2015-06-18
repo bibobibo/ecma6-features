@@ -2,6 +2,8 @@
 
 'use strict';
 
+console.log('Map.prototype: ', Object.getOwnPropertyNames(Map.prototype) );
+
 var m = new Map();
 var o = {
     x: 'blah'
