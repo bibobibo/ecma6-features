@@ -19,3 +19,22 @@ console.log(it2.next()) // { value:0, done:false }
 console.log(it2.next()) // { value:1, done:false }
 console.log(it2.next()) // { value:2, done:false }
 console.log(it2.next()) // { value:undefined, done:true }
+
+
+// next with parameter
+function* foo(){
+  yield 1;
+
+  yield (yield 2) || 3;
+}
+
+var f = foo();
+console.log(f.next())
+console.log(f.next())
+console.log(f.next('foo bar'))
+
+
+
+
+
+
