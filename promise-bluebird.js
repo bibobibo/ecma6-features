@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#! /usr/local/bin/node  --harmony --harmony_generators
 
 var Promise = require("bluebird");
 var fs = Promise.promisifyAll(require("fs"));
