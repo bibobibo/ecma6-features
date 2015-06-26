@@ -11,3 +11,20 @@ Object.observe(model, function(changes){
 });
 
 model.foo = 'bar';
+
+
+/* SpiderMonkey extension ----------------------------------------------------------------------
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/watch
+// Object.watch.toSource()
+
+var obj = {foo: 'bar'};
+
+obj.watch('foo', function(prop, oldval, newval){
+    console.log(prop, oldval, newval)
+});
+
+obj.foo = 123;
+obj.unwatch('foo');
+obj.foo = 5;
+
+-----------------------------------------------------------------------------------------------*/
