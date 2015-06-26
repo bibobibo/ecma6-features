@@ -25,3 +25,6 @@ let tree = new BinaryTree('a',
 for (let node of tree) {
     console.log('node', node);
 }
+
+// console.log( tree.next() );
+// console.log( tree.next() );
