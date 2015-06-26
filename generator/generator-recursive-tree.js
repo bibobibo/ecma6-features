@@ -8,7 +8,6 @@ class BinaryTree {
     }
 
     //Prefix iteration\\
-
     *[Symbol.iterator]() {
         yield this.value;
 
