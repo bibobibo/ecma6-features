@@ -35,6 +35,24 @@ console.log(f.next('foo bar'))
 
 
 
+function* powersOfTwo(maxExponent) {
+    var exponent = 0;
+    while (exponent <= maxExponent) {
+        yield Math.pow(2, exponent);
+        exponent++;
+    }
+}
+
+var it = powersOfTwo(10),
+    result = it.next();
+
+while (!result.done) {
+    console.log(result.value);
+    result = it.next();
+}
+
+
+
 
 
 
