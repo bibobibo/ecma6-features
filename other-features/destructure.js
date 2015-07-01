@@ -3,7 +3,7 @@
 
 var list = ['a','b',123];
 
-var [first, second, third] = ;
+var [first, second, third] = list;
 let [first, second, third] = list;
 const [first, second, third] = list;
 
