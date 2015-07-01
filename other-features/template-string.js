@@ -7,11 +7,11 @@
 
 var name = 'Paul',  age = 99;
 
-var str = `$(name), is apparently $(age) years old`
+var str = `${name}, is apparently ${age} years old`
 console.log(str)
 
 var longString = `here we have
-         a multiline string 
+         a multiline string
          using backtick quotes`;
 
 console.log(longString)
