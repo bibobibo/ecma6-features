@@ -7,7 +7,7 @@ function* foo() {
     yield 'bar';
 }
 
-function* generator() {
+function* gen() {
     yield [-1, 0]
     yield* [1, 2];
 
@@ -17,7 +17,7 @@ function* generator() {
     yield* foo();
 }
 
-var iterator = generator(5, 6);
+var iterator = gen(5, 6);
 console.log(iterator.next()); // { value: Array[2], done: false }
 console.log(iterator.next()); // { value: 1, done: false }
 console.log(iterator.next()); // { value: 2, done: false }

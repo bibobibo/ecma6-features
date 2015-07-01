@@ -7,4 +7,3 @@ var obj = {
 
 obj.foo(1, 2, 3);
 obj.bar('aaa', 'bbb');
-obj.baz();

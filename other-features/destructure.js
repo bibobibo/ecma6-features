@@ -17,13 +17,13 @@ console.log(foo, bar);
 var complicatedObj = {
   arrayProp: [
     "Zapp",
-    { second: "Brannigan" }
+    { second2: "Brannigan" }
   ]
 };
 
-var { arrayProp: [first, { second }] } = complicatedObj;
+var { arrayProp: [first2, { second2 }] } = complicatedObj;
 
-console.log(first, second);
+console.log(first2, second2);
 
 
 let a = 1, b = 3;

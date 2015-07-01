@@ -1,6 +1,6 @@
 //ecma7 Object.observe
 
-
+//------------------------chrome
 var model = {};
 
 // Which we then observe
