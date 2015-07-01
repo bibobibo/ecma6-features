@@ -13,11 +13,11 @@ function runTask(generatorFunc){
 }
 
 function processTheBigData(data){
-    console.log("small data: \n",data.toString()); 
+    console.log(">>>>>>>>>>>>>>>>>small data: \n",data.toString());
 }
 
 function* asyncFunc(){
-    var data = yield fs.readFileAsync("package.json");//the fs.readFileAsync is a Promise function.
+    var data = yield fs.readFileAsync(__filename);//the fs.readFileAsync is a Promise function.
     processTheBigData(data);
 }
 
