@@ -4,17 +4,30 @@
 var koa = require('koa');
 var app = koa();
 
-// logger
-app.use(function*(next) {
+app.use(function* logger(next) {
+    console.log('logger middleware started.')
     var start = new Date;
     yield next;
-    var ms = new Date - start;
-    console.log('%s %s - %sms', this.method, this.url, ms);
+    console.log('logger middleware ended.')
+    // console.log(this.method, this.url, new Date - start, ' ms')
+});
+
+app.use(function* foo(next) {
+    console.log('\tfoo middleware started.')
+    yield next;
+    console.log('\tfoo middleware ended.')
+});
+
+app.use(function* bar(next) {
+    console.log('\t\tbar middleware started.')
+    yield next;
+    console.log('\t\tbar middleware ended.')
 });
 
 // response
 app.use(function*() {
     this.body = 'hello, hell';
+    console.log('\t\t\t<<<Response ended!>>>');
 });
 
 app.listen(3000);
