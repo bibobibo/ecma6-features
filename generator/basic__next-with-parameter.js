@@ -12,8 +12,11 @@ function* foo(){
 var f = foo();
 console.log(f.next())       // { value: 1, done: false }
 console.log(f.next())       // { value: 2, done: false }
+
+// next(value) always sends the value to the currently suspended yield,
+// but returns the operand of the following yield.
 console.log(f.next('ping')) // { value: "bar", done: false }
-console.log(f.next())       //{ value: undefined, done: true }
+console.log(f.next())       // { value: undefined, done: true }
 
 
 
