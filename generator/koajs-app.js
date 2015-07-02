@@ -26,7 +26,7 @@ app.use(function* bar(next) {
 
 // response
 app.use(function*() {
-    this.body = 'hello, hell';
+    this.body = 'hello, koa.js';
     console.log('\t\t\t<<<Response ended!>>>');
 });
 
